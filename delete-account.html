@@ -1,51 +1,354 @@
-<div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <h1>Delete Your SurveyCoin PK Account</h1>
+  <title>Delete Account | SurveyCoin PK</title>
+  <meta
+    name="description"
+    content="Request deletion of your SurveyCoin PK account and associated data."
+  />
 
-    <p>
-        At <strong>SurveyCoin PK</strong>, we respect your privacy and give you full control over your account and personal data.
-    </p>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
 
-    <h2>Option 1: Request Immediate Account Deletion</h2>
+  <style>
+    :root {
+      --background-dark: #07111f;
+      --background-mid: #0d2745;
+      --background-blue: #0757b7;
+      --card-background: rgba(11, 25, 47, 0.78);
+      --primary-blue: #24b7ff;
+      --secondary-blue: #1976ff;
+      --light-blue: #bdddff;
+      --text-primary: #ffffff;
+      --text-secondary: #d6e8ff;
+      --border: rgba(255, 255, 255, 0.14);
+      --shadow: rgba(0, 0, 0, 0.38);
+    }
 
-    <p>
-        To permanently delete your SurveyCoin PK account and all associated data, please send an email to:
-    </p>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    <a class="email" href="mailto:usamasaeedtts11@gmail.com?subject=Delete My SurveyCoin PK Account">
-        usamasaeedtts11@gmail.com
-    </a>
+    html {
+      scroll-behavior: smooth;
+    }
 
-    <p style="margin-top:20px;">
-        Please use your registered email address and include the subject:
-        <strong>"Delete My SurveyCoin PK Account"</strong>.
-    </p>
+    body {
+      min-height: 100vh;
+      padding: 40px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+      font-family: "Poppins", Arial, sans-serif;
+      color: var(--text-primary);
+      background:
+        radial-gradient(
+          circle at 15% 15%,
+          rgba(36, 183, 255, 0.25),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 85% 85%,
+          rgba(25, 118, 255, 0.28),
+          transparent 32%
+        ),
+        linear-gradient(
+          135deg,
+          var(--background-dark),
+          var(--background-mid),
+          var(--background-blue)
+        );
+    }
 
-    <h2>Option 2: Automatic Account Removal</h2>
+    .page-wrapper {
+      width: 100%;
+      max-width: 880px;
+      position: relative;
+    }
 
-    <p>
-        Accounts that remain inactive for <strong>60 consecutive days</strong> may be permanently deleted along with their associated data.
-    </p>
+    .glow {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(60px);
+      pointer-events: none;
+      z-index: 0;
+    }
 
-    <h2>What Will Be Deleted?</h2>
+    .glow-one {
+      width: 220px;
+      height: 220px;
+      top: -60px;
+      left: -70px;
+      background: rgba(36, 183, 255, 0.24);
+    }
 
-    <ul>
-        <li>Your account information</li>
-        <li>Your profile details</li>
-        <li>Survey history</li>
-        <li>Coin balance</li>
-        <li>Withdrawal history</li>
-        <li>Activity records</li>
-    </ul>
+    .glow-two {
+      width: 250px;
+      height: 250px;
+      right: -80px;
+      bottom: -70px;
+      background: rgba(25, 118, 255, 0.22);
+    }
 
-    <div class="note">
-        <strong>Processing Time</strong><br><br>
-        Account deletion requests submitted by email are normally processed within
-        <strong>7 business days</strong>. Certain information may be retained where required by law or for fraud prevention purposes.
-    </div>
+    .card {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      padding: 48px;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: var(--card-background);
+      backdrop-filter: blur(22px);
+      -webkit-backdrop-filter: blur(22px);
+      box-shadow: 0 28px 70px var(--shadow);
+    }
 
-    <footer>
-        © 2026 SurveyCoin PK. All Rights Reserved.
-    </footer>
+    .brand {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 36px;
+    }
 
-</div>
+    .logo {
+      width: 92px;
+      height: 92px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 24px;
+      font-size: 42px;
+      background: linear-gradient(
+        135deg,
+        var(--primary-blue),
+        var(--secondary-blue)
+      );
+      box-shadow:
+        0 14px 32px rgba(0, 126, 255, 0.34),
+        inset 0 1px 0 rgba(255, 255, 255, 0.28);
+    }
+
+    h1 {
+      max-width: 650px;
+      margin-bottom: 12px;
+      font-size: clamp(28px, 5vw, 40px);
+      line-height: 1.2;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      max-width: 680px;
+      color: var(--text-secondary);
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .section {
+      margin-top: 28px;
+      padding: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.045);
+    }
+
+    .section h2 {
+      margin-bottom: 12px;
+      color: #74ccff;
+      font-size: 21px;
+      line-height: 1.4;
+      font-weight: 600;
+    }
+
+    .section p {
+      color: var(--text-secondary);
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    .email-address {
+      color: #ffffff;
+      font-weight: 600;
+      overflow-wrap: anywhere;
+    }
+
+    .email-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+      padding: 15px 24px;
+      border-radius: 13px;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      background: linear-gradient(
+        135deg,
+        var(--primary-blue),
+        var(--secondary-blue)
+      );
+      box-shadow: 0 12px 30px rgba(0, 126, 255, 0.3);
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+
+    .email-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 34px rgba(0, 126, 255, 0.42);
+    }
+
+    .email-button:focus {
+      outline: 3px solid rgba(116, 204, 255, 0.45);
+      outline-offset: 4px;
+    }
+
+    ul {
+      margin-top: 14px;
+      padding-left: 22px;
+      color: var(--text-secondary);
+    }
+
+    li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    .notice {
+      margin-top: 28px;
+      padding: 22px;
+      border-left: 4px solid var(--primary-blue);
+      border-radius: 14px;
+      color: var(--text-secondary);
+      background: rgba(36, 183, 255, 0.08);
+      line-height: 1.75;
+    }
+
+    .notice strong {
+      color: #ffffff;
+    }
+
+    footer {
+      margin-top: 34px;
+      text-align: center;
+      color: var(--light-blue);
+      font-size: 13px;
+      opacity: 0.9;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        padding: 20px 14px;
+      }
+
+      .card {
+        padding: 30px 22px;
+        border-radius: 22px;
+      }
+
+      .logo {
+        width: 78px;
+        height: 78px;
+        font-size: 36px;
+        border-radius: 20px;
+      }
+
+      .section {
+        padding: 20px;
+      }
+
+      .email-button {
+        width: 100%;
+        padding: 14px 16px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page-wrapper">
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+    <section class="card">
+      <div class="brand">
+        <div class="logo" aria-label="SurveyCoin PK logo">🪙</div>
+
+        <h1>Delete Your SurveyCoin PK Account</h1>
+
+        <p class="subtitle">
+          Your privacy matters to us. You can request permanent deletion of
+          your SurveyCoin PK account and its associated data at any time.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>📧 Request Account Deletion</h2>
+
+        <p>
+          To permanently delete your SurveyCoin PK account, send an email from
+          your registered email address to
+          <span class="email-address">usamasaeedtts11@gmail.com</span>.
+          Use the subject
+          <strong>“Delete My SurveyCoin PK Account”</strong>.
+        </p>
+
+        <a
+          class="email-button"
+          href="mailto:usamasaeedtts11@gmail.com?subject=Delete%20My%20SurveyCoin%20PK%20Account&body=Hello%2C%0A%0AI%20would%20like%20to%20permanently%20delete%20my%20SurveyCoin%20PK%20account%20and%20associated%20data.%0A%0ARegistered%20email%3A%20%0AUsername%3A%20%0A%0AThank%20you."
+        >
+          ✉️ Email Account Deletion Request
+        </a>
+      </div>
+
+      <div class="section">
+        <h2>⏳ Inactive Accounts</h2>
+
+        <p>
+          Accounts that remain unused for <strong>60 consecutive days</strong>
+          may be permanently deleted together with their associated account
+          data.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>🗑️ Data That Will Be Deleted</h2>
+
+        <ul>
+          <li>Account and login information</li>
+          <li>Profile details</li>
+          <li>Coin balance and reward records</li>
+          <li>Survey completion history</li>
+          <li>Withdrawal request history</li>
+          <li>Account activity records</li>
+        </ul>
+      </div>
+
+      <div class="notice">
+        <strong>Processing time:</strong>
+        Account deletion requests sent by email are normally processed within
+        <strong>7 business days</strong>. Limited information may be retained
+        only where required by law, security requirements, dispute handling, or
+        fraud prevention.
+      </div>
+
+      <footer>
+        © 2026 SurveyCoin PK. All rights reserved.
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
