@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Delete Account | CoinMine PK</title>
+  <meta
+    name="description"
+    content="Request deletion of your CoinMine PK account and associated data."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --bg-dark: #07140f;
+      --bg-mid: #0b2a1d;
+      --bg-green: #0f6a43;
+      --card: rgba(10, 28, 21, 0.82);
+      --primary: #32d583;
+      --secondary: #13b76a;
+      --gold: #f5c451;
+      --text: #ffffff;
+      --muted: #cbe9da;
+      --border: rgba(255, 255, 255, 0.12);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      padding: 40px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Poppins", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 15% 15%, rgba(50, 213, 131, 0.22), transparent 30%),
+        radial-gradient(circle at 85% 85%, rgba(245, 196, 81, 0.14), transparent 28%),
+        linear-gradient(135deg, var(--bg-dark), var(--bg-mid), var(--bg-green));
+    }
+
+    .wrapper {
+      width: 100%;
+      max-width: 880px;
+    }
+
+    .card {
+      padding: 48px;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: var(--card);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 28px 70px rgba(0, 0, 0, 0.4);
+    }
+
+    .brand {
+      text-align: center;
+      margin-bottom: 34px;
+    }
+
+    .logo {
+      width: 92px;
+      height: 92px;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 24px;
+      font-size: 42px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      box-shadow: 0 14px 32px rgba(50, 213, 131, 0.3);
+    }
+
+    h1 {
+      font-size: clamp(28px, 5vw, 40px);
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .section {
+      margin-top: 26px;
+      padding: 24px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.04);
+    }
+
+    .section h2 {
+      margin-bottom: 12px;
+      color: #7cf0b1;
+      font-size: 21px;
+    }
+
+    .section p {
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    ul {
+      margin-top: 14px;
+      padding-left: 22px;
+      color: var(--muted);
+    }
+
+    li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    .email-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 18px;
+      padding: 15px 24px;
+      border-radius: 13px;
+      color: #06120c;
+      text-decoration: none;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--gold), #ffd978);
+      box-shadow: 0 12px 30px rgba(245, 196, 81, 0.25);
+      transition: 0.2s ease;
+    }
+
+    .email-button:hover {
+      transform: translateY(-2px);
+    }
+
+    .notice {
+      margin-top: 28px;
+      padding: 22px;
+      border-left: 4px solid var(--gold);
+      border-radius: 14px;
+      background: rgba(245, 196, 81, 0.08);
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    footer {
+      margin-top: 34px;
+      text-align: center;
+      color: #b8d8c8;
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        padding: 20px 14px;
+      }
+
+      .card {
+        padding: 30px 22px;
+      }
+
+      .email-button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrapper">
+    <section class="card">
+
+      <div class="brand">
+        <div class="logo">⛏️</div>
+
+        <h1>Delete Your CoinMine PK Account</h1>
+
+        <p class="subtitle">
+          Your privacy matters to us. You can request permanent deletion of
+          your CoinMine PK account and associated data at any time.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>📧 Request Account Deletion</h2>
+
+        <p>
+          To request permanent deletion of your CoinMine PK account, send an
+          email from the email address registered with your account.
+        </p>
+
+        <p style="margin-top:12px;">
+          Use the subject:
+          <strong>“Delete My CoinMine PK Account”</strong>
+        </p>
+
+        <a
+          class="email-button"
+          href="mailto:usamasaeedtts11@gmail.com?subject=Delete%20My%20CoinMine%20PK%20Account&body=Hello%2C%0A%0AI%20would%20like%20to%20permanently%20delete%20my%20CoinMine%20PK%20account%20and%20associated%20data.%0A%0ARegistered%20email%3A%20%0AUsername%3A%20%0A%0AThank%20you."
+        >
+          ✉️ Send Deletion Request
+        </a>
+      </div>
+
+      <div class="section">
+        <h2>🗑️ Data That Will Be Deleted</h2>
+
+        <ul>
+          <li>Account and login information</li>
+          <li>Profile information</li>
+          <li>Coin balance</li>
+          <li>Energy balance and mining activity</li>
+          <li>Survey activity and completion history</li>
+          <li>Rewarded ad activity</li>
+          <li>Withdrawal requests and related account activity</li>
+          <li>Other account-related records associated with your profile</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>⏳ Processing Time</h2>
+
+        <p>
+          Account deletion requests are normally processed within
+          <strong>7 business days</strong> after the request is received and
+          verified.
+        </p>
+      </div>
+
+      <div class="notice">
+        <strong>Important:</strong><br><br>
+        Once your account is permanently deleted, your remaining Coin and
+        Energy balances, activity history, and other associated account data
+        cannot be recovered. Certain limited records may be retained where
+        required by applicable law, security requirements, fraud prevention,
+        or dispute resolution.
+      </div>
+
+      <footer>
+        © 2026 CoinMine PK. All rights reserved.
+      </footer>
+
+    </section>
+  </main>
+</body>
+</html>
